@@ -14,7 +14,7 @@ export const onSignup = ({email, password, phone}) => async(dispatch) => {
 
     try {
          
-        const response = await PostData('/customner/signup', {
+        const response = await PostData('/customer/signup', {
           email, password, phone
         });
         const { token } = response.data;

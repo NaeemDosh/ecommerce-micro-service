@@ -59,8 +59,9 @@ it is a simple eCommerce Application using Microservices Architecture without im
 
 ### 3. Configure env variables
 
-- Create .env.dev file in each folder (app, customer, shopping, products).
-- Set the value of the variables based on the example file _sample_env_.
+- Copy `.env.dev.example` to `.env.dev` in each folder (app, customer, shopping, products).
+- Adjust the variable values based on the example file `sample_env`.
+- For the frontend `app`, set `REACT_APP_BASE_URL` to the gateway URL (e.g. `http://localhost:8000/`).
 
 ### 4. Start services
 
