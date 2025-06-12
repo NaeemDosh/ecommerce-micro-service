@@ -1,7 +1,8 @@
 import api from 'axios';
 
  
-api.defaults.baseURL = "http://localhost:8000/";
+export const API_BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:8000/";
+api.defaults.baseURL = API_BASE_URL;
 
 const setHeader = () => {
     const token = localStorage.getItem('token');

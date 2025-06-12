@@ -4,4 +4,5 @@
 **/.DS_Store
 **/node_modules
 **/.env*
+!**/.env.dev.example
 .todo
